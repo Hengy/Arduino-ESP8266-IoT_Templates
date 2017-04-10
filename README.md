@@ -5,7 +5,7 @@ V1.0.0
 
 Impliments
 - WiFi
-- Async Webserver with SPIFFS
+- Async Webserver with SPIFFS (https://github.com/me-no-dev/ESPAsyncWebServer)
 - Websockets
-- JSON
+- JSON (https://github.com/bblanchon/ArduinoJson)
 - mDNS
