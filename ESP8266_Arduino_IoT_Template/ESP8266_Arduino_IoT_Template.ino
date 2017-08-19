@@ -82,7 +82,7 @@ String hname = "hostname";
 //JSON
 char JSONbuf[500];
 
-// serial print buffrt
+// serial print buffer
 char printBuf[250];
 // ------------------------------------------------------
 
@@ -156,11 +156,11 @@ void sendJSON(void) {
   JsonObject &infoRoot = infoBuffer.createObject();
   
   infoRoot["type"] = "test";
-  JsonArray& clockTimeArray = infoRoot.createNestedArray("arrayVals");
-  clockTimeArray.add("val1");
-  clockTimeArray.add("val2");
-  clockTimeArray.add("val3");
-  clockTimeArray.add("val4");
+  JsonArray& testArray = infoRoot.createNestedArray("arrayVals");
+  testArray.add("val1");
+  testArray.add("val2");
+  testArray.add("val3");
+  testArray.add("val4");
   infoRoot["anotherTest"] = 100;
 
   infoRoot.printTo(JSONbuf);
